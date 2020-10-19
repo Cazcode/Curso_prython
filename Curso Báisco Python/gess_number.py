@@ -1,8 +1,8 @@
 import random
 
-def gess_numer(numero):
+def gess_numer():
     numero_aleatorio = random.randint(1,100)
-    respuesta = False
+    numero = int(input("Por favor ingresa un número del 1 al 100: "))
     while numero != numero_aleatorio:
         if numero_aleatorio > numero:
             numero = int(input("Intenta con un número mas grande. "))
@@ -11,7 +11,7 @@ def gess_numer(numero):
     print("Has adivinado el número!!!!")
 
 def run():
-    gess_numer(int(input("Por favor ingresa un número del 1 al 100: ")))
+    gess_numer()
 
 
 if __name__ == '__main__':
